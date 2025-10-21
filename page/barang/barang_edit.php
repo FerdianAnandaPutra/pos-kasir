@@ -11,10 +11,6 @@ if (isset($_GET['id'])) {
     $data = mysqli_query($dbconnect, "SELECT * FROM barang where id_barang='$id'");
     $data = mysqli_fetch_assoc($data);
 
-// if (!$data) {
-//         echo "Data tidak ditemukan untuk ID $id";
-//         exit;
-//     }
 }
 
 if (isset($_POST['update'])) {

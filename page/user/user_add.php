@@ -24,10 +24,6 @@ if (isset($_POST['simpan'])) {
 <div class="container">
 	<h1>Tambah User</h1>
 	<form method="post">
-    <!-- <div class="form-group">
-	    <label>ID User</label>
-	    <input type="text" name="id" class="form-control" placeholder="ID User">
-	  </div> -->
 	  <div class="form-group">
 	    <label>Nama User</label>
 	    <input type="text" name="nama" class="form-control" placeholder="Nama User">

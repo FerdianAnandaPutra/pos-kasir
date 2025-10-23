@@ -21,7 +21,7 @@ unset($_SESSION['success']);
 </h6>
 <hr class="my-2">
 	<div class="d-flex justify-content-between align-items-center mb-1">
-    <a href="index.php?page=barang/barang_add" class="btn btn-primary">Tambah Data</a>
+    <a href="index.php?page=user/user_add" class="btn btn-primary">Tambah Data</a>
 </div>
 	<table class="table table-bordered">
 		 <thead class="table-dark"> 

@@ -1,10 +1,6 @@
 <?php
 include 'koneksidb.php';
 session_start();
-// remove all session variables
-// session_unset();
-
-// print_r($_SESSION);
 
 if (isset($_POST['masuk'])) {
     $username = $_POST['username'];
@@ -14,11 +10,9 @@ if (isset($_POST['masuk'])) {
 
     //mendapatkan hasil dari data
     $data = mysqli_fetch_assoc($query);
-    // return var_dump($data);
 
     //mendapatkan nilai jumlah data
     $check = mysqli_num_rows($query);
-    // return var_dump($check);
 
     if (!$check) {
         $_SESSION['error'] = 'Username & password salah';

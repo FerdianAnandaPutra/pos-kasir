@@ -25,8 +25,6 @@ foreach ($_SESSION['cart'] as $key => $value) {
     $tot = $harga * $qty;
 
     // Simpan ke tabel detail_transaksi
-   
-
     mysqli_query($dbconnect, "INSERT INTO transaksi_detail (id_transaksi_detail, id_transaksi, id_barang, qty, harga, total)
     VALUES (NULL, '$id_transaksi', '$id_barang', '$qty', '$harga', '$tot')");
 

@@ -2,7 +2,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'kasirdb';
+$db = 'pos_kasir';
 
 $dbconnect = new mysqli("$host", "$user", "$pass", "$db");
 

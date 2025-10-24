@@ -12,8 +12,8 @@ $total = $_POST['total'];
 $nama = $_SESSION['nama'];
 $kembali = $bayar - $total;
 
-mysqli_query($dbconnect, "INSERT INTO transaksi (id_transaksi, tanggal_waktu, nomor, total, nama, bayar, kembali) 
-VALUES (NULL, '$tanggal_waktu', '$nomor', '$total', '$nama','$bayar', '$kembali')");
+mysqli_query($dbconnect, "INSERT INTO transaksi (id_transaksi, tanggal_waktu, nomor, total, nama, bayar, kembali, diskon) 
+VALUES (NULL, '$tanggal_waktu', '$nomor', '$total', '$nama','$bayar', '$kembali', 0)");
 
 $id_transaksi = mysqli_insert_id($dbconnect);
 

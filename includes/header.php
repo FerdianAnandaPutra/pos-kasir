@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kasir Modern</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- jQuery (dibutuhkan oleh Select2) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 <style>
 body {
   background-color: #f5f7fa;
@@ -53,6 +60,21 @@ form.d-flex.flex-wrap {
     gap: 10px;
   }
 }
+ .select2-container .select2-selection--single {
+    height: 43px !important;        /* tinggi form */
+    font-size: 16px;                /* ukuran font */
+    display: flex;
+    align-items: center;
+  }
+
+  .select2-selection__rendered {
+    line-height: 48px !important;
+    padding-left: 12px !important;
+  }
+
+  .select2-selection__arrow {
+    height: 48px !important;
+  }
 </style>
 </head>
 <body>

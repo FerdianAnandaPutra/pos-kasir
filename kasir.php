@@ -1,9 +1,9 @@
 <?php
-include 'koneksidb.php';
 session_start();
+include 'koneksidb.php';
 include 'authcheck_kasir.php';
 
-$barang = mysqli_query($dbconnect, 'SELECT * FROM barang');
+$barang = mysqli_query($dbconnect, 'SELECT * FROM barang ORDER BY nama ASC');
 $sum = 0;
 if (isset($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $value) {
@@ -28,7 +28,7 @@ include 'includes/header.php';
 
   <div class="row g-2 mb-3">
     <form method="post" action="keranjang_act.php" class="d-flex flex-wrap gap-2">
-      <select class="form-select" name="id_barang" required>
+      <select class="form-select select-barang" name="id_barang" required>
         <option value="">Pilih Barang</option>
         <?php while ($row = mysqli_fetch_array($barang)) { ?>
           <option value="<?= $row['id_barang'] ?>"><?= $row['nama'] ?></option>

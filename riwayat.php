@@ -4,7 +4,7 @@ include 'koneksidb.php';
 include 'authcheck_kasir.php';
 
 // Ambil semua transaksi terbaru
-$query = mysqli_query($dbconnect, "SELECT * FROM transaksi ORDER BY tanggal_waktu ASC");
+$query = mysqli_query($dbconnect, "SELECT * FROM transaksi ORDER BY tanggal_waktu DESC");
 ?>
 
 <!DOCTYPE html>

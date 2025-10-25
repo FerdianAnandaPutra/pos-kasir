@@ -29,7 +29,7 @@ if (!$result) {
         <input type="date" name="dari" class="form-control mr-2" required>
         <label class="mr-2">Sampai:</label>
         <input type="date" name="sampai" class="form-control mr-2" required>
-        <button type="submit" name="filter_tanggal" class="btn btn-primary">Filter</button>
+        <button type="submit" name="filter_tanggal" class="btn btn-primary mt-2">Filter</button>
     </form>
 
     <table class="table table-bordered">

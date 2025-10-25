@@ -36,11 +36,15 @@ unset($_SESSION['success']);
 		<tr>
 			<td> <?= $row['id_role'] ?> </td>
 			<td><?= $row['nama'] ?></td>
-			
 			<td>
-				<a href="index.php?page=role/role_edit&id=<?= $row['id_role'] ?>">Edit</a> |
-				<a href="index.php?page=role/role_hapus&id=<?= $row['id_role'] ?>" 
-				onclick="return confirm('apakah anda yakin?')">Hapus</a>
+				 <a href="index.php?page=role/role_edit&id=<?= $row['id_role'] ?>" class="btn btn-sm btn-warning">
+                    <i class="bi bi-pencil-square"></i> Edit
+                </a>
+                <a href="index.php?page=role/role_hapus&id=<?= $row['id_role'] ?>" 
+                   class="btn btn-sm btn-danger"
+                   onclick="return confirm('Apakah Anda yakin ingin menghapus role ini?')">
+                    <i class="bi bi-trash"></i> Hapus
+                </a>
 				</td>
 		</tr>
 		<?php }

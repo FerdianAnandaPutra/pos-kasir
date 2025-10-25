@@ -43,9 +43,14 @@ unset($_SESSION['success']);
             <td><?=$row['password']?></td>
 			<td><?=$row['nama_role']?></td>
 			<td>
-				<a href="index.php?page=user/user_edit&id=<?= $row['id_user'] ?>">Edit</a> |
-				<a href="index.php?page=user/user_hapus&id=<?= $row['id_user'] ?>" 
-				onclick="return confirm('apakah anda yakin?')">Hapus</a>
+				 <a href="index.php?page=user/user_edit&id=<?= $row['id_user'] ?>" class="btn btn-sm btn-warning">
+                    <i class="bi bi-pencil-square"></i> Edit
+                </a>
+                <a href="index.php?page=user/user_hapus&id=<?= $row['id_user'] ?>" 
+                   class="btn btn-sm btn-danger"
+                   onclick="return confirm('Apakah Anda yakin ingin menghapus user ini?')">
+                    <i class="bi bi-trash"></i> Hapus
+                </a>
 				</td>
 		</tr>
 		<?php }

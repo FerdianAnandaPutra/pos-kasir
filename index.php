@@ -23,19 +23,14 @@ if (isset($_SESSION['userid'])) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kasir</title>
-
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
   <!-- Google Font (Poppins) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../css/style.css">
-
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -50,9 +45,7 @@ if (isset($_SESSION['userid'])) {
     }
   </style>
 </head>
-
   <body>
-
   <!-- Navbar -->
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 d-flex align-items-center" href="#" style="font-family: 'Poppins', sans-serif; font-size: 22px;">

@@ -10,7 +10,6 @@ if (isset($_SESSION['cart'])) {
         $sum += (int)$value['harga'] * (int)$value['qty'];
     }
 }
-
 include 'includes/header.php';
 ?>
 
